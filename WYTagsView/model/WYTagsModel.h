@@ -10,4 +10,11 @@
 
 @interface WYTagsModel : NSObject
 
+@property (nonatomic,strong)NSString *title;
+
+@property (nonatomic,strong)NSString *color;
+
+- (instancetype)initWithTagsDict:(NSDictionary *)dict;
+
+
 @end

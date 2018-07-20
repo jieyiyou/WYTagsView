@@ -1,3 +1,5 @@
+
+
 //
 //  WYTagsModel.m
 //  WYTagsView
@@ -9,5 +11,13 @@
 #import "WYTagsModel.h"
 
 @implementation WYTagsModel
+
+- (instancetype)initWithTagsDict:(NSDictionary *)dict{
+    self =[super init];
+    if(self ){
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
 
 @end

@@ -15,6 +15,9 @@
 		E3C0102C2101C21500AC25D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C0102B2101C21500AC25D8 /* main.m */; };
 		E3C010362101C21500AC25D8 /* WYTagsViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C010352101C21500AC25D8 /* WYTagsViewTests.m */; };
 		E3C010412101C21500AC25D8 /* WYTagsViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C010402101C21500AC25D8 /* WYTagsViewUITests.m */; };
+		E3C010522101C32600AC25D8 /* TagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C010512101C32600AC25D8 /* TagsView.m */; };
+		E3C010552101C6A700AC25D8 /* WYTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C010542101C6A700AC25D8 /* WYTagsModel.m */; };
+		E3C010592101D3C300AC25D8 /* tagsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C010582101D3C200AC25D8 /* tagsData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		E3C0103C2101C21500AC25D8 /* WYTagsViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYTagsViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C010402101C21500AC25D8 /* WYTagsViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTagsViewUITests.m; sourceTree = "<group>"; };
 		E3C010422101C21500AC25D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C010502101C32600AC25D8 /* TagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagsView.h; sourceTree = "<group>"; };
+		E3C010512101C32600AC25D8 /* TagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagsView.m; sourceTree = "<group>"; };
+		E3C010532101C6A700AC25D8 /* WYTagsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTagsModel.h; sourceTree = "<group>"; };
+		E3C010542101C6A700AC25D8 /* WYTagsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTagsModel.m; sourceTree = "<group>"; };
+		E3C010582101D3C200AC25D8 /* tagsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tagsData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,9 @@
 		E3C0101B2101C20900AC25D8 /* WYTagsView */ = {
 			isa = PBXGroup;
 			children = (
+				E3C010582101D3C200AC25D8 /* tagsData.plist */,
+				E3C0104F2101C28900AC25D8 /* model */,
+				E3C0104E2101C27C00AC25D8 /* view */,
 				E3C0101C2101C20900AC25D8 /* AppDelegate.h */,
 				E3C0101D2101C20900AC25D8 /* AppDelegate.m */,
 				E3C0101F2101C20900AC25D8 /* ViewController.h */,
@@ -130,6 +141,24 @@
 				E3C010422101C21500AC25D8 /* Info.plist */,
 			);
 			path = WYTagsViewUITests;
+			sourceTree = "<group>";
+		};
+		E3C0104E2101C27C00AC25D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E3C010502101C32600AC25D8 /* TagsView.h */,
+				E3C010512101C32600AC25D8 /* TagsView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E3C0104F2101C28900AC25D8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E3C010532101C6A700AC25D8 /* WYTagsModel.h */,
+				E3C010542101C6A700AC25D8 /* WYTagsModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +266,7 @@
 			files = (
 				E3C010292101C21500AC25D8 /* LaunchScreen.storyboard in Resources */,
 				E3C010262101C21500AC25D8 /* Assets.xcassets in Resources */,
+				E3C010592101D3C300AC25D8 /* tagsData.plist in Resources */,
 				E3C010242101C20A00AC25D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3C010212101C20900AC25D8 /* ViewController.m in Sources */,
+				E3C010552101C6A700AC25D8 /* WYTagsModel.m in Sources */,
 				E3C0102C2101C21500AC25D8 /* main.m in Sources */,
 				E3C0101E2101C20900AC25D8 /* AppDelegate.m in Sources */,
+				E3C010522101C32600AC25D8 /* TagsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
